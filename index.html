@@ -5,54 +5,163 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<h1 id="titres"> Objectifs </h1>
-<h3>Perte de poids</h3>
-<h3>Renforcement musculaire</h3>
-<h3>Technique de combat</h3>
 
 	
-			<h1 id="titres"> OUR CHAMPS </h1>
-	<img class="immg"src="tk1/tk1 champions.jpg">
-	<h1 class="sous titres"> fight nights</h1>
-	<img class="immg" src="tk1/fightnight.jpg">
-		<h1>OBJECTIF </h1>
-<h1 class="cat">Perte de Poids </h1>
-	<h1 class="cat">Renforcement musculaire</h1>
-	<h1 class="cat">Sparring </h1>
-		<h1>CATEGORIES</h1>
-	<h1 class="cat">Kick boxing </h1>
-	<img id="sport" src="tk1/categories/kickboxing.jpg">
-	<h1 class="cat">Boxe anglaise </h1>
-	<img id="sport" src="tk1/categories/boxe anglaise.jpg">
-	<h1 class="cat">MMA </h1>
-	<img id="sport" src="tk1/categories/mma.jpg">
-	<h1 class="cat">Taekwando </h1>
-	<img id="sport" src="tk1/categories/taekwando.jpg">
-	<h1 class="cat">Karaté</h1>
-	<img id="sport" src="tk1/categories/karaté.jpg">
-	<h1 class="cat">gymnastique </h1>
-	<img id="sport" src="tk1/categories/gymnastique.jpg"><br>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/M4CUgYUGw3g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
 
-	<br>
-	   <select style="margin: 2.5rem 0!important;" class="selectclub" id="gyms">
-              <option value="" disabled="" selected="">  Selectionnez votre club</option>
+<div class="topnav">
+  <img class="logo" src="tk1/logo.png">
+  <img class="logo" src="tk1/logo2.png">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">Nos clubs</a>
+  <a href="#news">Nos activités</a>
+  <a href="#news">Nos offres</a>
+  <a href="#news">Events</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+<img id="ani"src="tk1/poing2">
+    
+	<h1 class="titres"><span>TK1 GYM</span> </h1>
+	<img class="immg" src="tk1/fightnight.jpg">
+
+    <div class="gym-select"style="background:#990F0F;"style="width: 200px" id="selectdiv">
+           <h3 style="text-transform: uppercase; margin: 30px 0px 0px">Select your club</h3>
+
+              <br>
+     <select style="margin: 2rem;" class="selectclub" id="gyms">
+              <option value="" disabled="" selected="">  Select your club</option>
              <option value="0">El Manar</option>
              <option value="1">Bizerte</option>
-             <option value="2">La Marsa</option></select>
-	<div  id="follow">
-            
+             <option value="2">La Marsa</option>
+         </select>
+  
+                </div>
+
+    
+    <h1>Calculate your BMI </h1>
+<div class="imc">
+
+		<form name="bmiForm">
+
+<LABEL FOR="R1">Male</LABEL>
+<INPUT TYPE="Radio" Name="Gender" ID="R1" Value="Male">
+
+<LABEL FOR="R2">Female</LABEL>
+<INPUT TYPE="Radio" Name="Gender" ID="R2" Value="Female">
+<br>
+<br>
+Your Weight(kg): <input type="text" name="weight" size="10"><br />
+Your Height(cm): <input type="text" name="height" size="10"><br />
+<input type="button" value="Calculate BMI" onClick="calculateBmi()"><br />
+Your BMI: <input type="text" name="bmi" size="10"><br />
+This Means: <input type="text" name="meaning" size="25"><br />
+<input type="reset" value="Reset" />
+</form>
+<div> <input type="radio" id="fine" name="ossature" value="male">
+  <label for="fine">Si votre pouce recouvre l'ongle de votre majeur,
+votre ossature est fine</label><br>
+  <input type="radio" id="moyenne" name="ossature" value="female">
+  <label for="moyenne">Si votre pouce touche le bout de votre majeur,
+votre ossature est moyenne</label><br>
+  <input type="radio" id="large" name="ossature" value="other">
+  <label for="large">Si votre pouce ne touche pas le bout de votre majeur,
+votre ossature est large</label>
+<img id="poignet" src="tk1/poignet.gif"></div>
+</div>
+
+
+ 
+    <h1>OBJECTIF </h1>
+<div style='display:flex'>
+    <figure>
+  <p><img src="tk1/perte.jpg"
+    width="350" height="250"
+    alt="perte">
+  <figcaption class="obj"><strong>Perdre du poids</strong></figcaption>
+</figure>
+<figure>
+  <p><img src="tk1/renforcement.jpg"
+    width="350" height="250"
+    alt="renforcement musculaire">
+  <figcaption class="obj"><strong>Renforcement musculaire</strong></figcaption>
+</figure>
+<figure>
+  <p><img src="tk1/ufc-belt.jpg"
+    width="350" height="250"
+    alt="sparring">
+  <figcaption class="obj"><strong>Sparring</strong></figcaption>
+</figure>
+</div>
+<br>
+<br>
+<br>
+		<h1>CATEGORIES</h1>
+ 
+
+<div style='display:flex'>
+		<figure>
+  <p><img src="tk1/categories/kickboxing.jpg"
+    width="350" height="250"
+    alt="kick">
+  <figcaption class="cat">kick boxing</figcaption>
+</figure>
+<figure>
+  <p><img src="tk1/categories/boxe anglaise.jpg"
+    width="350" height="250"
+    alt="boxe anglaise">
+  <figcaption class="cat">Boxe anglaise</figcaption>
+</figure>
+<figure>
+  <p><img src="tk1/categories/mma.jpg"
+    width="350" height="250"
+    alt="MMA">
+  <figcaption class="cat">MMA</figcaption>
+</figure>
+</div>
+
+<div style='display:flex'>
+		<figure>
+  <p><img src="tk1/categories/taekwando.jpg"
+    width="350" height="250"
+    alt="kick">
+  <figcaption class="cat">Taekwando</figcaption>
+</figure>
+<figure>
+  <p><img src="tk1/categories/kara.jpg"
+    width="350" height="250"
+    alt="karaté">
+  <figcaption class="cat">karate</figcaption>
+</figure>
+<figure>
+  <p><img src="tk1/categories/gymnastique.jpg"
+    width="350" height="250"
+    alt="gymnastique">
+  <figcaption class="cat">gymnastique</figcaption>
+</figure>
+</div>
+	
+	<br>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/M4CUgYUGw3g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+   
+          
+
+	<div class="section" id="contacts">
             <h1><span>Follow US</span></h1>
            
-                <a href="https://www.facebook.com/TK1gym/">
-                    <img alt="Facebook" src="https://i.ya-webdesign.com/images/png-facebook-icon-4.png"/>
-                </a>
-            
-                <a href="https://www.youtube.com/channel/UCGqPLpEORMNV959efkG3VrA">
-                    <img alt="Youtube" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c545.png" />
-                </a>
                 <a href="https://www.instagram.com/tk1_gym/?hl=en">
-                    <img alt="Instagram" src=https://www.01net.com/i/0/0/ccc/d8c30875b0aadc1cc9bcc9dc4042d.png />
+                    <img src="tk1/social/insta.jpg" alt="Instagram" />
+                </a>
+                <a href="https://www.facebook.com/TK1gym/">
+                    <img alt="Facebook" src="tk1/social/facebook.png"/>
+                </a>
+                <a href="https://www.youtube.com/channel/UCGqPLpEORMNV959efkG3VrA" >
+                    <img class="icones" src="tk1/social/youtube.png"
+
+             alt="YouTube">
                 </a>
             </div>
 <script type="text/javascript" src="main.js"></script>
